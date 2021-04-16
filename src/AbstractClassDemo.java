@@ -11,6 +11,7 @@ abstract class Demo{
 	
 }
 
+
 public class AbstractClassDemo extends Demo {
 	
 	AbstractClassDemo(){
