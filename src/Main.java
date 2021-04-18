@@ -41,6 +41,14 @@ class Dog extends Animal{
 } 
 
 class Cat extends Animal{
+	String str;
+	
+	public String getStr() {
+		return str;
+	}
+	public void setStr(String str) {
+		this.str = str;
+	}
 	@Override
 	public void eat(String name) {
 		super.eat(name);
