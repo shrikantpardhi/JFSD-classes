@@ -24,6 +24,8 @@ class Chat {
 				e.printStackTrace();
 			}
 		}
+			
+		
 
 		System.out.println(msg);
 		flag = false;
