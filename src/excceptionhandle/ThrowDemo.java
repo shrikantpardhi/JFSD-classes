@@ -21,10 +21,10 @@ class ThrowDemo {
 	public static void main(String args[]) {
 
 		 try{
-			 validate(19);
+			 validate(17);
 		 }catch (ArithmeticException e) {
 			// TODO: handle exception
-			 
+			 System.out.println(e.getMessage());
 		}
 		 
 		 System.out.println("Demo");
