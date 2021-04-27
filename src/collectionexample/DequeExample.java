@@ -10,7 +10,7 @@ public class DequeExample {
 		Queue<Integer> numbers = new ArrayDeque<>();
 		
 		numbers.offer(2);
-        numbers.addLast(4);
+//        numbers.addLast(4);
         numbers.offer(-1);
         numbers.offer(-5);
         numbers.offer(5);
