@@ -31,15 +31,20 @@ public class DemoJdbcFirst {
 			
 			stmt = conn.createStatement();
 			
-			String query = "select * from student";
+//			String query = "select * from student";
+			String query = "CREATE TABLE DEPT(DEPTID INT PRIMARY KEY, DEPTNAME VARCHAR(20))";
 			
-			ResultSet rs = stmt.executeQuery(query);
+//			ResultSet rs = stmt.executeQuery(query);
+			if(!stmt.execute(query))
+				System.out.println("DEPT table cretaed successfully..");
+			else
+				System.out.println("Unable to crreate table..");
 			
-			while(rs.next()) {
-				System.out.print("roll :"+ rs.getInt("roll"));
-				System.out.print(" name :"+ rs.getString("name"));
-				System.out.println(" city :"+ rs.getString("city"));
-			}
+//			while(rs.next()) {
+//				System.out.print("roll :"+ rs.getInt("roll"));
+//				System.out.print(" name :"+ rs.getString("name"));
+//				System.out.println(" city :"+ rs.getString("city"));
+//			}
 
 		} catch (ClassNotFoundException e) {
 			// TODO Auto-generated catch block
