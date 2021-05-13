@@ -30,15 +30,19 @@ public class DemoJdbcFirst {
 			System.out.println("connected to database...");
 			
 			stmt = conn.createStatement();
+//			String query = "create database student";
+//			stmt.executeUpdate(query);
 			
 //			String query = "select * from student";
 			String query = "CREATE TABLE DEPT(DEPTID INT PRIMARY KEY, DEPTNAME VARCHAR(20))";
 			
+			stmt.executeUpdate(query);
+			
 //			ResultSet rs = stmt.executeQuery(query);
-			if(!stmt.execute(query))
-				System.out.println("DEPT table cretaed successfully..");
-			else
-				System.out.println("Unable to crreate table..");
+//			if(!stmt.execute(query))
+//				System.out.println("DEPT table cretaed successfully..");
+//			else
+//				System.out.println("Unable to crreate table..");
 			
 //			while(rs.next()) {
 //				System.out.print("roll :"+ rs.getInt("roll"));

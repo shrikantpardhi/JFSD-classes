@@ -14,7 +14,7 @@ public class InsertData {
 		System.out.println("Registering Driver...");
 
 		try {
-			Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.jdbc.Driver"); //register driver
 			conn = DriverManager.getConnection("jdbc:mysql://localhost/javaclass", "root", "root");
 			System.out.println("connected to database...");
 			stmt = conn.createStatement();
@@ -26,14 +26,13 @@ public class InsertData {
 			e.printStackTrace();
 		}
 		String n = "shri";
-		String query = "insert into student values (21,'"+n+"', 'sone')";
+		String query = "insert into student values (22,'shri', 'sone'),(23,'shri','sone')";
 		try { 
 			if(stmt.executeUpdate(query)>0)
 				System.out.println("succesfully insert data");
 			else
 				System.out.println("failed");
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
