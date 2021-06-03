@@ -17,7 +17,7 @@ if(true){
 }
 	
 else
-	response.sendRedirect("login.html");
+	response.sendRedirect("error.html");
 %>
 
 </body>
