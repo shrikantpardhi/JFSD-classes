@@ -19,7 +19,7 @@
 	
 	<h1>Edit Form</h1>
         <form action="UpdateUser.jsp" method="post">
-            <input type="hidden" name="id" value="<%=s.getRoll()%>"/>
+            <input type="hidden" name="roll" value="<%=s.getRoll()%>"/>
             <table>
                 <tr><td>Name:</td><td><input type="text" name="name" value="<%= s.getName()%>"/></td></tr>
                 <tr><td>City:</td><td><input type="text" name="city" value="<%= s.getCity()%>"/></td></tr>
